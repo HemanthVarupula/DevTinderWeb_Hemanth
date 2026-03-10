@@ -4,7 +4,7 @@ import BASE_URL from './utils/constant';
 import { useDispatch } from 'react-redux';
 import { addUser } from './utils/userSlice';
 import axios from 'axios';
-const editProfile = ({user}) => {
+const EditProfile = ({user}) => {
     const [toast,setToast]=useState(false)
     const [firstName,setFirstName]=useState(user.firstName);
     const [lastName,setLastName]=useState(user.lastName);
@@ -28,7 +28,7 @@ const editProfile = ({user}) => {
     }
   return (
     <>
-    <div className='flex gap-10 justify-center'>
+    <div className='flex gap-10 justify-center mt-10'>
     <div className='flex justify-center'>
         <fieldset className="fieldset bg-base-400 border-base-300 rounded-box w-xs border p-4">
   <legend className="fieldset-legend text-center">Update Profile</legend>
@@ -70,4 +70,4 @@ const editProfile = ({user}) => {
   )
 }
 
-export default editProfile
+export default EditProfile

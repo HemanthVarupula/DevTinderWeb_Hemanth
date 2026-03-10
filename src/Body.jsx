@@ -30,13 +30,22 @@ const Body = () => {
   },[])
   return (
     <div>
-        <NavBar/>
-        <div className='flex  justify-center  gap-40'>
+        {/* <NavBar/> */}
+        {/* <div className='flex  justify-center  gap-40'> */}
            {/* <Link to={"/login"}><button className='border-2 rounded-2xl bg-green-300 p-7 text-4xl cursor-pointer '>login</button></Link> */}
             {/* <Link to={"/signup"}><button className='border-2 rounded-2xl bg-red-500 p-7 text-4xl cursor-pointer '>Signup</button></Link> */}
+        {/* </div> */}
+        {/* <Outlet/> */}
+        {/* <Footer  /> */}
+         <div className="min-h-screen flex flex-col">
+      <NavBar />
+      <main className="flex-1">
+        <div className='flex justify-center gap-40'>
         </div>
-        <Outlet/>
-        <Footer/>
+        <Outlet />
+      </main>
+      <Footer /> 
+    </div>
     </div>
   )
 }
